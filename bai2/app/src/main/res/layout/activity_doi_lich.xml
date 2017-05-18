@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nt.bai2.doi_lich">
+
+    <RelativeLayout
+        android:layout_width="367dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="12dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/namduonglich"
+            android:layout_alignStart="@+id/namduonglich"
+            android:layout_below="@+id/btchuyen"
+            android:layout_marginTop="24dp"
+            android:text="năm âm lịch:" />
+
+        <TextView
+            android:id="@+id/namduonglich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="21dp"
+            android:text="năm dương lịch:" />
+
+        <Button
+            android:id="@+id/btchuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namduonglich"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="chuyển" />
+
+        <EditText
+            android:id="@+id/txtnamduong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/namduonglich"
+            android:layout_toRightOf="@+id/namduonglich"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/txtnamam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignEnd="@+id/txtnamduong"
+            android:layout_alignLeft="@+id/btchuyen"
+            android:layout_alignRight="@+id/txtnamduong"
+            android:layout_alignStart="@+id/btchuyen"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
